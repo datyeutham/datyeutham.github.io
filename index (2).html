@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Web Troll Bạn Bè</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+    #noBtn {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bạn có thấy video này hấp dẫn không?</h1>
+  <iframe width="320" height="180" src="https://www.youtube.com/embed/UTbTfbz5JVo?autoplay=1"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+  <p>Haha! Bạn đã bị troll rồi còn ngồi xem hết video này?</p>
+
+  <h2>Đạt có yêu Thắm không?</h2>
+  <button onclick="alert('Haha, đúng là bạn yêu Thắm rồi!')">Có</button>
+  <button id="noBtn" onmouseover="moveNoBtn()">Không</button>
+
+  <script>
+    const btn = document.getElementById('noBtn');
+    function moveNoBtn() {
+      btn.style.top = Math.random() * window.innerHeight + 'px';
+      btn.style.left = Math.random() * window.innerWidth + 'px';
+    }
+  </script>
+</body>
+</html>
